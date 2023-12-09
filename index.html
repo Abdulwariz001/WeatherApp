@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+
+<body>
+    <!-- <div class="err-alert">
+                <div class="err"><i class="fas fa-times-circle"></i> No results found</div>
+            </div> -->
+    <section class="container">
+            <header id="name">
+                 <i class="fas fa-cloud-sun-rain"></i>
+                 W<i class="fas fa-star fa-spin"></i>SCODED <span>Weather App</span>
+            </header>
+            <div class="input-container">
+                <input type="search" placeholder="Search for a city" required id="inputcity">
+                <button type="submit" onclick="srchWeather()"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="box-weather">
+
+                <img src="images/sunny.png" class="sunny" width="50%" alt="">
+
+                <h1 id="temp">12°C</h1>
+                <h2 id="namecity">Germany</h2>
+                <div id="descrip"></div>
+                
+                <div class="kilometer">
+                    <div class="wind">
+                        <div>
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <div>
+                            <div id="wind">4km/h</div>
+                            <strong>Wind speed</strong>
+                        </div>
+                    </div>
+
+
+                    <div class="wind">
+                        <div>
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div>
+                            <div id="humidP">42%</div>
+                            <strong>Humidity</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

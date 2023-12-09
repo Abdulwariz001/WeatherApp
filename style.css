@@ -1,0 +1,372 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Rubik;
+}
+
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://source.unsplash.com/1600x900/?weather");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding:20px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.box-weather {
+    margin-top: 10px;
+}
+
+#namecity {
+    font-family: poppins;
+}
+
+#name{
+    font-family: lucida handwriting;
+    padding: 12px;
+    text-shadow:0 0  12px blue;
+}
+
+#wind {
+    margin-bottom: 5px;
+}
+
+#humidP {
+    margin-bottom: 5px;
+}
+.wind strong{
+    font-size: 14px;
+}
+
+#temp {
+    font-size: 55px;
+    font-weight: lighter;
+}
+
+#name span {
+    text-shadow: 0 0 12px blue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.kilometer .fa-wind {
+    font-size: 37px;
+    color: dodgerblue;
+}
+
+/* 
+.err{
+    color: rgb(120, 5, 5);
+    padding: 15px; 
+    display: none;
+    font-size:18px;
+    margin: 0 auto;
+    transition: all 0.2s ease;
+    border-radius:0;
+    text-align: center;
+    background-color: rgb(238, 149, 149);
+} */
+
+.kilometer .fa-tint {
+    font-size: 37px;
+    color: gold;
+}
+
+.container .fa-cloud-sun-rain {
+    color: gold;
+    text-shadow: none;
+    font-size:22px;
+}
+
+.container {
+    max-width: 400px;
+    padding: 20px;
+    color: white;
+    transition: all 0.4s ease-in;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 50px auto;
+    text-align: center;
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("images/clouds.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 630px;
+    width: 100%;
+    background-repeat: no-repeat; */
+
+}
+
+.container header {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.container input[type=search] {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+}
+
+::placeholder {
+    color: black;
+    font-size: 15px;
+}
+#descrip{
+    text-transform: capitalize;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.kilometer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:45px 10px 20px;
+}
+
+
+.container button {
+    padding: 15px 13px;
+    cursor: pointer;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+.wind {
+    display: flex;
+    align-items: center;
+
+}
+
+.wind>div {
+    margin: 0 2px;
+}
+
+
+@media screen and (max-width:768px) {
+    .box-weather {
+        margin-top: 30px;
+    }
+
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://source.unsplash.com/1600x900/?weather");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        padding: 10px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+   
+#name{
+    font-family: lucida handwriting;
+    padding: 15px;
+    text-shadow:0 0  12px blue;
+}
+
+    #wind {
+        margin-bottom: 5px;
+    }
+
+    #humidP {
+        margin-bottom: 5px;
+    }
+
+    #temp {
+        font-size: 55px;
+    }
+
+   
+#name span {
+    text-shadow: 0 0 12px blue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+    .kilometer .fa-wind {
+        font-size: 37px;
+        color: dodgerblue;
+    }
+
+    .kilometer .fa-tint {
+        font-size: 37px;
+        color: gold;
+    }
+
+
+    .container .fa-cloud-sun-rain {
+        color: gold;
+    }
+
+    .container {
+        max-width: 400px;
+        padding: 20px;
+        color: white;
+        transition: all 0.4s ease-in;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin: 50px auto;
+        text-align: center;
+        /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("images/clouds.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 630px;
+        width: 100%;
+        background-repeat: no-repeat; */
+    
+    }
+
+    .container header {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+
+
+    .container input[type=search] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        font-size: 15px;
+        outline: none;
+    }
+
+    ::placeholder {
+        color: black;
+        font-size: 15px;
+    }
+
+    .input-container {
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .kilometer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+
+    }
+
+
+    .container button {
+        padding: 12px 13px;
+        cursor: pointer;
+        border: none;
+        background-color: dodgerblue;
+        color: white;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+
+    .wind {
+        display: flex;
+        align-items: center;
+    }
+
+    .wind>div {
+        margin: 0 2px;
+    }
+
+
+    /* .err{
+        color: rgb(120, 5, 5);
+        padding: 15px; 
+        display: none;
+        font-size:18px;
+        width: 100%;
+        margin: 0 auto;
+        transition: all 0.2s ease;
+        border-radius:0;
+        text-align: center;
+        background-color: rgb(238, 149, 149); */
+    /* } */
+
+}
+
+@media screen and (max-width:500px) {
+  
+#name{
+    font-family: lucida handwriting;
+    padding: 10px;
+    text-shadow:0 0  12px blue;
+}
+
+#namecity {
+    font-family: poppins;
+}
+.container {
+    max-width: 500px;
+    padding: 20px;
+    color: white;
+    transition: all 0.4s ease-in;
+    margin: 50px  auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("images/clouds.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 630px;
+    width: 100%;
+    background-repeat: no-repeat; */
+
+}
+
+}
+
+@media screen and (max-width:300px) {
+ 
+    #name{
+        font-family: lucida handwriting;
+        padding: 10px;
+        text-shadow:0 0  12px blue;
+    }
+
+#namecity {
+    font-family: poppins;
+}
+
+
+#name span {
+    text-shadow: 0 0 12px blue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    padding: 20px;
+    color: white;
+    transition: all 0.4s ease-in;
+    margin: 50px  auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("images/clouds.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat; */
+
+}
+
+    
+}
